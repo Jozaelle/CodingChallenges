@@ -26,6 +26,8 @@
 //
 //            1 <= n <= 45
 
+
+
 public class Code {
 
     public int climbStairs(int n) {
@@ -55,29 +57,26 @@ public class Code {
 //
 //            **Bonus:** Can you do this in one pass?
 
-    public int addTwo(int k, int num1, int num2, int nums[] ) {
+    public int addTwo(int k, int nums[]) {
         int j;
 
         for (int i = 0; i >= nums.length; i++)
 
-            for (j = 0; j >= nums.length; j++)
+            for (j = 0; j >= nums.length; j++) {
 
-                i = num1;
-                j = num2;
-        {
-            if (num1 + num2 == k) ;{
+                int result = i + j;
 
-                return k;
+                if(result == k){
+                    
+                    System.out.println("true");
+                }
 
             }
-//I want it to read through the array and add the first number to each number that is in the array and if it does not equal to k
-// then switch to the second number in the array and add that to everything after it in the array, and so on until there is a pair that matches.
-            //Should I convert it to a boolean since the answer is asking me to return true?
 
-
-
-
-        }
-
+        return k;
     }
+    //I want it to read through the array and add the first number to each number that is in the array and if it does not equal to k
+// then switch to the second number in the array and add that to everything after it in the array, and so on until there is a pair that matches.
+    //Should I convert it to a boolean since the answer is asking me to return true?
+
 }
